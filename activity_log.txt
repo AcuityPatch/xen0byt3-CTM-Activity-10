@@ -1,63 +1,36 @@
-AcuityPatch@adoVM-$: ip a
-Ethernet -> 1.2.3.4
-AcuityPatch@adoVM-$: hostname -I
-AcuityPatch 1.2.3.4
-AcuityPatch@adoVM-$: ping
-Usage: ping <target>
-AcuityPatch@adoVM-$: traceroute
-Usage: traceroute <target>
-AcuityPatch@adoVM-$: nslookup
-Usage: nslookup <target>
-AcuityPatch@adoVM-$: dig
-Usage: dig <target>
-AcuityPatch@adoVM-$: nmap <target>
-Host seems down or not found.
-AcuityPatch@adoVM-$: nmap -sV <target>
-Host seems down or not found.
-AcuityPatch@adoVM-$: nmap -A <target>
-Host seems down or not found.
-AcuityPatch@adoVM-$: tcpdump -i Ethernet
+Logs:
+Hostname: Acuitypatch
+IP Address: 1.2.3.4
 
-listening on Ethernet, link-type EN10MB (Ethernet), capture size 262144 bytes
+User Activity Logs:
+ip a
+hostname -I
+ping https://www.sinrevilo.moc
+ping https://www.xeno-byte.moc
+ping https://www.gi4nt-tcr.moc
+traceroute https://www.sinrevilo.moc
+traceroute https://www.xeno-byte.moc
+trace https://www.gi4nt-tcr.moc
+traceroute https://www.gi4nt-tcr.moc
+nslook https://www.sinrevilo.moc
+nslookup sinrevilo.moc
+nslookup xeno-byte.moc
+nslookup gi4nt-tcr.moc
+dig sinrevilo.moc
+dig xeno-byte.moc
+dig gi4nt-tcr.moc
+nmap 89.562.167.1
+nmap 149.658.125.3
+nmap 78.562.35.6
+nmap -sV 89.562.167.1
+nmap -sV 149.658.125.3
+nmap -sV 78.562.35.6
+tcpdump -i Ethernet
+arp--scan --localnet
+sudo arp-scan --localnet
+ls
+cat activity_log.txt
+cat activity_real.txt
+cat activity_10_log.txt
+wget activity_10_log.txt
 
-19:56:39 IP 192.168.1.211.22 > 192.168.1.83.22: UDP, length 89
-19:56:39 IP 192.168.1.117 > 192.168.1.237: ICMP echo request, id 2381, seq 2, length 64
-19:56:40 IP 192.168.1.201.443 > 192.168.1.206.443: UDP, length 48
-19:56:40 IP 192.168.1.163 > 192.168.1.39: ICMP echo request, id 1035, seq 4, length 64
-19:56:41 IP 192.168.1.195 > 192.168.1.111: ICMP echo request, id 2991, seq 5, length 64
-19:56:41 IP 192.168.1.133.3389 > 192.168.1.120.3389: UDP, length 52
-19:56:42 IP 192.168.1.42.53 > 192.168.1.139.53: Flags [S], seq 8142, win 64240, length 0
-19:56:42 IP 192.168.1.244.445 > 192.168.1.247.445: Flags [S], seq 8736, win 64240, length 0
-AcuityPatch@adoVM-$: arp-scan --localnet
-You don't have admin privileges to invoke this command
-AcuityPatch@adoVM-$: sudo arp-scan --localnet
-
-Scanning local network...
-
-192.168.1.150    CE:6E:D2:E4:1E:53  Epson-Printer (Windows Laptop)
-192.168.1.162    F0:37:F9:1E:F6:02  TPLink-Router (Tablet)
-192.168.1.30     AD:2D:41:38:C6:24  TempSensor-X (MacBook)
-192.168.1.29     AD:5A:53:CD:2E:C9  HP-Desktop (Smart TV)
-192.168.1.172    0F:5B:0E:3E:B4:7B  iPhone-13 (Printer)
-192.168.1.71     0B:FC:BE:0C:76:DA  SmartLight-01 (iPhone)
-192.168.1.18     55:46:DB:25:31:D9  iPad-Pro (Router)
-192.168.1.110    47:73:F3:B2:EC:B8  TempSensor-X (Android Phone)
-192.168.1.52     37:E2:A8:57:49:E4  TPLink-Router (IoT Sensor)
-192.168.1.73     31:34:9F:DE:99:D2  iPhone-13 (Smart Bulb)
-AcuityPatch@adoVM-$: ls
-
-File Listing:
-activity_log.txt
-activity_real.txt
-activity_10_log.txt
-
-AcuityPatch@adoVM-$: cat
-Usage: cat <filename>
-AcuityPatch@adoVM-$: wget
-Invoke ls to see file listing
-AcuityPatch@adoVM-$: ls
-
-File Listing:
-activity_log.txt
-activity_real.txt
-activity_10_log.txt
